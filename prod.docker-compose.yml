@@ -1,0 +1,18 @@
+version: '3'
+
+services:
+  web:
+    image: mescheidker/django_milk_freshness_site
+    ports:
+      - "8000:8000"
+    environment:
+      - DEBUG=1
+
+  nginx:
+    image: nginx:alpine
+    ports:
+      - "80:80"
+    volumes:
+      - ./nginx/default.conf:/etc/nginx/conf.d/default.conf
+    depends_on:
+      - web
