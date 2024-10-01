@@ -2,7 +2,7 @@ version: '3'
 
 services:
   web:
-    image: mescheidker/django_milk_freshness_site
+    image: mescheidker/django_milk_freshness_site:latest
     ports:
       - "8000:8000"
     environment:
