@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-d^dct9lmi+rvw-#6svqcmikjpdm-_$bte)q$wm3$=%vhq1b5$a
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['charger.food.is','markserver.epicgamer.org', 'scheidker.com']
+ALLOWED_HOSTS = ['scheidker.com']
 
 
 # Application definition
